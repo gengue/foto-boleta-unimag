@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Foto Boleta Unimag</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta property="og:title" content="Foto Boleta Unimag" />
+	<meta property="og:description" content="Chismosea las fotos de tus amigos" />
+	<meta property="og:image" content="img/logo.jpg" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row text-center">
+			<div class="col-xs-12">
+				<img src="img/logo.jpg" class='img-rounded' alt="LOL" height="100" width="100" />
+			</div>
+			<div class="col-xs-12">
+				<h1>Foto Boleta Unimag <br><small>Chismosea las fotos de tus compa&ntilde;eros</small></h1>	
+			</div>			
+		</div>
+		<div class="row">
+			<div class=".col-md-6 .col-md-offset-3 text-center">
+				<form fole="form">
+					<div class="form-group">						
+						<input type="text" class="form-control" id="codigo" name="codigo" placeholder="Ingresa el codigo">
+					</div>
+					<a href="javascript:cargarImagen();" class="btn btn-default"><i class="icon-plus"></i>Ver Foto</a>
+				</form>				
+			</div>			
+		</div>
+		<hr>
+		<div id="foto" class="row" style="display:none;">
+			<div class="col-md-6 text-center">
+				<img id="fotoResul" src="#" alt=""/>
+			</div>
+			<div class="col-md-6">
+				
+					<div class="row">
+						<p><a class="btn btn-primary btn-lg btn-block" href="javascript: void(0);" onclick="var url=window.location.href;window.open('http://www.facebook.com/sharer.php?u=url','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">Facebook</a></p>
+					</div>	
+					<div class="row">
+						<p><a href="#" class="btn btn-info btn-lg btn-block">Twitter</a></p>
+					</div>
+		
+				
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
